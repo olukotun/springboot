@@ -1,8 +1,9 @@
-package com.olukotun.springdataenversauditing;
+package com.olukotun.springdataenversauditing.BookDTO;
 
 
 import lombok.*;
 import org.hibernate.envers.Audited;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,6 +17,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @Audited
+@Component
 public class Book {
 
     @Id
