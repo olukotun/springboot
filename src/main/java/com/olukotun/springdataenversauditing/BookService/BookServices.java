@@ -4,6 +4,7 @@ import com.olukotun.springdataenversauditing.BookDA0.BookDAO;
 import com.olukotun.springdataenversauditing.BookDTO.Book;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
@@ -13,6 +14,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Service
 public class BookServices {
+    @Autowired
     private BookDAO bookDAO;
 
     public Book saveBook(Book book) {
